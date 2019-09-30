@@ -73,17 +73,24 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Controllers\User_Controller.cs" />
-    <Compile Include="Migrations\201909300115004_AddModel.cs" />
-    <Compile Include="Migrations\201909300115004_AddModel.Designer.cs">
-      <DependentUpon>201909300115004_AddModel.cs</DependentUpon>
+    <Compile Include="Migrations\201909300122036_AddModel.cs" />
+    <Compile Include="Migrations\201909300122036_AddModel.Designer.cs">
+      <DependentUpon>201909300122036_AddModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="View\ChangePassword.xaml.cs">
+      <DependentUpon>ChangePassword.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\ChangePassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -121,8 +128,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201909300115004_AddModel.resx">
-      <DependentUpon>201909300115004_AddModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201909300122036_AddModel.resx">
+      <DependentUpon>201909300122036_AddModel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

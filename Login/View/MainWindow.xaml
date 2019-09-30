@@ -12,15 +12,15 @@
             <Image Source="/Assets/mii-logo.png" Width="100" Height="100"/>
             <Border Background="#FFD3DE61" Margin="10 20 " CornerRadius="5">
                 <StackPanel Margin="25">
-                    <TextBox x:Name="Txt_Username" Margin="15" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Userame"/>
+                    <TextBox x:Name="Txt_Username" Margin="15" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Username"/>
                     <PasswordBox x:Name="Txt_Password" Margin="15" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Password"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <Button Name="Btn_Register" Margin="15 10" Content="Register" Click="Btn_Register_Click"/>
                         <Button Name="Btn_Login" Margin="15 10" Content="Login" Click="Btn_Login_Click"/>
                     </StackPanel>
                     <StackPanel>
-                        <CheckBox x:Name="Chk_Remember" Content="Remember Me" HorizontalAlignment="Center" Margin="30" Foreground="Gray"/>
-                        <Button x:Name="Btn_Forgot" Content="Forgot Password" Foreground="Gray" HorizontalAlignment="Center"/>
+                        <CheckBox x:Name="Chk_Remember" Content="Remember Me" HorizontalAlignment="Center" Margin="30" Foreground="Gray" Checked="Chk_Remember_Checked"/>
+                        <Button x:Name="Btn_Forgot" Content="Forgot Password" Foreground="Gray" HorizontalAlignment="Center" Click="Btn_Forgot_Click"/>
                     </StackPanel>
                 </StackPanel>
             </Border>

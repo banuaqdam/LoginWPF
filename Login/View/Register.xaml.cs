@@ -36,15 +36,18 @@ namespace Login.View
         }
         private void Btn_Register_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
             User_Controller user = new User_Controller();
+            MainWindow main = new MainWindow();
+
             string _Name = Txt_Name.Text;
             string _Username = Txt_Username.Text;
             string _Password = Txt_Password.Password;
 
             user.AddUser(_Name, _Username, _Password);
+
             this.Hide();
             main.Show();
+            this.Close();
         }
     }
 }

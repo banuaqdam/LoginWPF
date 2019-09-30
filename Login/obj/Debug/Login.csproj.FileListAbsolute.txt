@@ -27,3 +27,5 @@ C:\Users\ASUS\documents\visual studio 2015\Projects\Login\Login\obj\Debug\Login.
 C:\Users\ASUS\documents\visual studio 2015\Projects\Login\Login\obj\Debug\View\Home.g.cs
 C:\Users\ASUS\documents\visual studio 2015\Projects\Login\Login\obj\Debug\View\Home.baml
 C:\Users\ASUS\documents\visual studio 2015\Projects\Login\Login\obj\Debug\Login.Migrations.AddModel.resources
+C:\Users\ASUS\documents\visual studio 2015\Projects\Login\Login\obj\Debug\View\ChangePassword.g.cs
+C:\Users\ASUS\documents\visual studio 2015\Projects\Login\Login\obj\Debug\View\ChangePassword.baml

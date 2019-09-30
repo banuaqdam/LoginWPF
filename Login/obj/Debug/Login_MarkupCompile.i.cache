@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ASUS\documents\visual studio 2015\Projects\Login\Login\App.xaml
-3-339372731
+4732782665
 
-14712420841
+18-400331715
 1846998880
-View\Home.xaml;View\MainWindow.xaml;View\Register.xaml;
+View\ChangePassword.xaml;View\Home.xaml;View\MainWindow.xaml;View\Register.xaml;
 
-False
+True
 

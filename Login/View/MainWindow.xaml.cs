@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Login.Controllers;
 
 
 namespace Login
@@ -26,12 +27,27 @@ namespace Login
         public MainWindow()
         {
             InitializeComponent();
-           
+            Txt_Username.Text = Properties.Settings.Default.Username;
         }
 
         private void Btn_Login_Click(object sender, RoutedEventArgs e)
         {
+            User_Controller user = new User_Controller();
+            string _username = Txt_Username.Text;
+            string _password = Txt_Password.Password;
+            var result = user.Login(_username, _password);
 
+            if(result == true)
+            {
+                this.Hide();
+                Home home = new Home(_username);
+                home.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("User/Password Error!");
+            }       
         }
 
         private void Btn_Register_Click(object sender, RoutedEventArgs e)
@@ -40,6 +56,17 @@ namespace Login
             Register Register = new Register();
             Register.ShowDialog();
             this.Close();
+        }
+
+        private void Chk_Remember_Checked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.Username = Txt_Username.Text;
+            Properties.Settings.Default.Save();
+        }
+
+        private void Btn_Forgot_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Under Construction");
         }
     }
 }
